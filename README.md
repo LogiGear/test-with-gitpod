@@ -14,6 +14,7 @@
 - [Generate a Gondola token](https://docs.gondolatest.com/subscription/#generating-a-token)
 - Open package.json, then add --licenseToken for "test" script. Example: "test": "./node_modules/.bin/gondola run --steps --reporter mochawesome --licenseToken ABCDEFDSFASDFASDFASDFASD"
 - Run your test with `npm run test` and see how it runs on the VNC page.
+- If you want to run on BrowserStack, please register account and get your username & access key. Then, update them to gondola_browser_stack.json file. Run `npm run test:browser_stack` and see how it runs on BrowserStack page.
 ## Record A Test
 https://docs.gondolatest.com/testbuilder-guide/using-web-testbuilder.html#using-web-testbuilder
 ## Execute Test

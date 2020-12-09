@@ -7,7 +7,8 @@
         "clean": "rimraf built",
         "compile": "npm run clean && tsc",
         "parallel": "./node_modules/.bin/gondola run-multiple parallel --reporter mochawesome",
-        "test": "./node_modules/.bin/gondola run --steps --reporter mochawesome"
+        "test": "./node_modules/.bin/gondola run --steps --reporter mochawesome",
+        "test:browser-stack": "./node_modules/.bin/gondola -c gondola_browser_stack.json run --steps --reporter mochawesome"
     },
     "author": "",
     "license": "ISC",

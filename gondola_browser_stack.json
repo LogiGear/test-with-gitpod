@@ -1,0 +1,59 @@
+{
+    "tests": "./built/**/*_test.js",
+    "timeout": 10000,
+    "output": "./results",
+    "helpers": {
+        "Appium": {
+            "url": "https://demo.gondolatest.com",
+            "browser": "chrome",      
+            "hostname" : "hub-cloud.browserstack.com", 
+            "port": 80,     
+            "keepBrowserState": false,
+            "restart": false,
+            "keepCookies": false,
+            "smartWait": 5000,
+            "timeouts": {
+                "script": 60000,
+                "pageLoad": 10000
+            },
+            "capabilities": {
+                "alwaysMatch": {
+                    "os_version" : "10.0",
+                    "device" : "Samsung Galaxy S20",
+                    "browserstack.appium_version" : "1.18.3",
+                    "browserstack.local" : "false",
+                    "browserstack.debug" : "true",
+                    "browserstack.user" : "tiennguyen40",
+                    "browserstack.key" : "n6NUXpsv4TTyyg9fkfZR",
+                    "os" : "android",
+                    "browser": "Android",
+                    "platform" : "ANDROID",
+                    "realMobile" : false, 
+                    "browserName" : "chrome",
+                    "version" : "86"
+
+                }
+            }
+        },
+        "Mochawesome": {}
+    },
+    "include": {},
+    "bootstrap": false,
+    "plugins": {
+        "screenshotOnFail": {
+            "enabled": true
+        }
+    },
+
+    "mocha": {
+        "reporterOptions": {
+            "reportDir": "results",
+            "inlineAssets": true,
+            "timestamp": "isoDateTime",
+            "reportFilename": "gondola",
+            "autoOpen": true,
+            "reportPageTitle": "Gondola Test Result"
+        }
+    },
+    "name": "ts_example"
+}
