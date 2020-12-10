@@ -21,6 +21,6 @@
         "rimraf": "3.0.2"
     },
     "devDependencies": {
-        "@wdio/selenium-standalone-service": "6.10.3"
+        "@wdio/selenium-standalone-service": "6.1.14"
     }
 }
